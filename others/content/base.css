@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-gap: 20px;
+}
+
+button:hover,
+a:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 300px;
+    font-size: 20px;
+}
+
+button {
+    background: transparent;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.fixed-element-top {
+    position: fixed;
+    top: 0;
+}
+
+.bars {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.bars .line,
+.bars .line::after,
+.bars .line::before {
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    margin: 0 4px;
+    transition: 0.3s ease-in;
+}
+
+.bars .line::after,
+.bars .line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.bars .line::after {
+    top: 2px;
+}
+
+.bars .line::before {
+    bottom: 2px;
+}
+
+.day-walker .inverse .bars .line,
+.day-walker .inverse .bars .line::after,
+.day-walker .inverse .bars .line::before {
+    background-color: #fff;
+}
+
+.bars.close .line {
+    width: 0;
+    height: 0;
+    background-color: red;
+}
+
+.bars.close .line::after {
+    rotate: 45deg;
+    translate: 0px 11px;
+}
+
+.bars.close .line::before {
+    rotate: -45deg;
+    translate: 0px -11px;
+}
+
+body .bars.close .line::after,
+body .bars.close .line::before {
+    background-color: red !important;
+    width: 100%;
+    height: 4px;
+}
+
+.main-pad {
+    padding: calc(var(--main-gap) / 2) var(--main-gap);
+}
+
+.sub-pad-up {
+    padding: 0.4em 0 0 0;
+}
+
+.small-gap {
+    gap: 0.5em;
+}
+
+.big-gap {
+    gap: 1em;
+}
+
+.u-flex {
+    display: flex;
+}
+
+.o-grid {
+    display: grid;
+}
+
+.plac-cont-cent {
+    place-content: center;
+}
+
+.plac-item-cent {
+    place-items: center;
+}
+
+.w-h-100 {
+    margin: auto;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.just-cont-SB {
+    justify-content: space-between;
+}
+
+.just-cont-cent {
+    justify-content: center;
+}
+
+.ali-items-cent {
+    align-items: center;
+}
+
+.f-break {
+    flex-wrap: wrap;
+}
+
+.move {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    translate: 0 -50%;
+    background-color: #000;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    visibility: visible;
+    z-index: 100;
+}
+
+.move.hide {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    z-index: -100;
+}
+
+.move.prev-btn {
+    left: 0em;
+}
+
+.move.next-btn {
+    right: 0em;
+}
+
+.box-shadow-5-w {
+    box-shadow: 0 0 5px #fff;
+}
+
+.box-shadow-5-b {
+    box-shadow: 0 0 5px #000;
+}
+
+.box-rad-5 {
+    border-radius: 5px;
+}
+
+.box-rad-8 {
+    border-radius: 8px;
+}
+
+.box-rad-10 {
+    border-radius: 10px;
+}
+
+.hideF {
+    visibility: hidden;
+}
+
+.showF {
+    width: 100%;
+    visibility: visible;
+}
+
+.border-l-3 {
+    border: 3px solid #000;
+}
+
+.b-fill {
+    background-color: #000;
+    color: #fff;
+}
+
+.set-relative {
+    position: relative;
+}
+
+.modal-card {
+    padding: 1em;
+    flex-basis: 33.3333333333%;
+    min-width: 270px;
+    max-width: 270px;
+    height: auto;
+    font-size: 0.9em;
+}
+
+.back-drop {
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #05040449;
+}
+
+.z-over {
+    z-index: 1000;
+}
+
+.z-under {
+    z-index: 10;
+}
+
+/* color theme control */
+
+.day-walker {
+    background-color: #fff;
+    color: #000;
+}
+
+.day-walker .t-card {
+    background-color: #fff;
+    color: #000;
+}
+
+.day-walker .t-card.inverse {
+    background-color: #000;
+    color: #fff;
+}
+
+.day-walker .t-text {
+    color: #000;
+}
+
+.day-walker .t-text.inverse {
+    color: #fff;
+}
+
+/*h-nav special*/
+.day-walker .h-nav.t-card a {
+    color: #000;
+}
+
+.day-walker .h-nav.t-card.inverse a {
+    color: #fff;
+}
+/*end of h-nav special*/
+
+@media (max-width: 540px) {
+    .day-walker .h-nav.t-card .nav-links-box {
+        background-color: #fff;
+    }
+
+    .day-walker .h-nav.t-card a,
+    .day-walker .h-nav.t-card.inverse .nav-links-box a {
+        color: #000;
+    }
+
+    .day-walker .h-nav.t-card.inverse a {
+        color: #fff;
+    }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Portfolio</title>
+        <meta
+            name="description"
+            content="My Portfolio, My Work, My Description, "
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" color="#000" />
+        <link rel="stylesheet" href="content/base.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="content/animate.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body class="day-walker">
+        <script type="module" src="app.js" defer></script>
+        <header id="Header">
+            <nav
+                class="h-nav t-card u-flex just-cont-SB sub-pad-up ali-items-cent"
+            >
+                <div class="logo-n">
+                    <a href="#Header" class="nav-link"><span>D-id8</span></a>
+                </div>
+                <div class="nav-links-box">
+                    <ul>
+                        <li><a href="#Skills" class="nav-link">skills</a></li>
+                        <li>
+                            <a href="#Projects" class="nav-link">projects</a>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="nav-link">contact me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-box">
+                    <button class="menu-btn bars set-relative">
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="banner-section animated full s1">
+                <div class="container u-flex just-cont-cent ali-items-cent">
+                    <div class="portfolio-description d1">
+                        <div class="sub-container animated fadeInDown">
+                            <div class="info u-flex f-col small-gap">
+                                <div class="intro">
+                                    <h4>Hi,</h4>
+                                    <h2>
+                                        My Name is
+                                        <span id="my_name"
+                                            >Daniel Fadamitan</span
+                                        >
+                                    </h2>
+                                    <span class="what-i-do">
+                                        I am a
+                                        <span id="role"
+                                            >FRONTEND WEB DEVELOPER</span
+                                        >
+                                    </span>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Cum nisi dolores vel,
+                                        earum et praesentium numquam ipsa
+                                        maiores
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-container">
+                                <a
+                                    download="Daniel Fadamitan CV"
+                                    href="agreement.pdf"
+                                >
+                                    <button
+                                        class="btn-B border-l-3 animated delay-5s slower heartBeat infinite"
+                                    >
+                                        <i class="fa fa-download"></i> Download
+                                        CV
+                                    </button>
+                                </a>
+                                <a href="#Contact" class="nav-link">
+                                    <button class="btn-B b-fill border-l-3">
+                                        <i class="fa fa-send"></i> Send a
+                                        Message
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-image d2">
+                        <div class="sub-container set-relative">
+                            <div
+                                class="slash-box n1 u-flex f-col ali-items-cent"
+                            >
+                                <div class="slash"></div>
+                                <div class="slash"></div>
+                            </div>
+                            <div class="img-box animated heartBeat">
+                                <img
+                                    src="image/profile/profile.png"
+                                    alt="..."
+                                />
+                            </div>
+                            <div
+                                class="slash-box n2 u-flex f-col ali-items-cent"
+                            >
+                                <div class="slash"></div>
+                                <div class="slash"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills-section s2 full other" id="Skills">
+                <div class="header">
+                    <h2>Skills</h2>
+                </div>
+                <div class="container mM animated hideF">
+                    <div
+                        class="skC u-flex just-cont-cent ali-items-cent f-break big-gap"
+                    ></div>
+                </div>
+            </section>
+            <section class="project-section s3 full other" id="Projects">
+                <div class="header">
+                    <h2>Projects</h2>
+                </div>
+                <div class="container mM animated hideF">
+                    <div
+                        class="pmC u-flex just-cont-cent ali-items-cent f-break big-gap"
+                    ></div>
+                </div>
+            </section>
+            <section class="contact-section s4 full other" id="Contact">
+                <div class="header">
+                    <h2>contact us</h2>
+                </div>
+                <div class="container mCU animated hideF">
+                    <form
+                        action="/"
+                        method="post"
+                        class="contact-form"
+                        id="ContactForm"
+                    >
+                        <div class="u-flex just-cont-cent alig-items-cent">
+                            <div class="sub-container">
+                                <div class="u-flex f-col small-gap">
+                                    <label for="sender_name">Name</label>
+                                    <input
+                                        required
+                                        type="text"
+                                        name="sender_name"
+                                        id="sender_name"
+                                        class="sender_name box-rad-10"
+                                        placeholder="John Deo"
+                                    />
+                                </div>
+                                <div class="u-flex f-col small-gap">
+                                    <label for="email">Email Address</label>
+                                    <input
+                                        required
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        class="email box-rad-10"
+                                        placeholder="example@gmail.com"
+                                    />
+                                </div>
+                                <div class="u-flex f-col small-gap">
+                                    <label for="phone">Phone Number</label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        class="phone box-rad-10"
+                                        placeholder="+1 344 2342 244"
+                                    />
+                                </div>
+                            </div>
+                            <div class="sub-container">
+                                <div class="u-flex f-col small-gap">
+                                    <label for="name">Message</label>
+                                    <textarea
+                                        required
+                                        name="message"
+                                        id="message"
+                                        class="message box-rad-10"
+                                        placeholder="Send me a message"
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="stn-box u-flex ali-items-cent just-cont-cent"
+                        >
+                            <button type="submit" class="send">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <aside>
+            <div class="theme-box">
+                <button class="moon bars" title="Theme">
+                    <i class="fa fa-moon-o"></i>
+                </button>
+                <div class="theme-list animated zoomIn">
+                    <h4>Modes</h4>
+                    <ul>
+                        <li>
+                            <button class="theme-item" id="dark_knight">
+                                Dark Knight
+                            </button>
+                        </li>
+                        <li>
+                            <button class="theme-item" id="blue_hero">
+                                Blue Hero
+                            </button>
+                        </li>
+                        <li>
+                            <button class="theme-item" id="day_walker">
+                                Day Walker
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links-box u-flex f-col ali-items-cen">
+                <button class="globe" name="show-social">
+                    <i class="fa fa-globe fa-spin"></i>
+                </button>
+                <div class="social-links-list animated bounceInLeft">
+                    <ul>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://github.com/Invalid8"
+                                title="github profile"
+                            >
+                                <img src="image/icons/github.svg" alt="..." />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/daniel-fadamitan-a08052247"
+                                title="linkdin profile"
+                            >
+                                <img src="image/icons/linkedin.svg" alt="..." />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://web.facebook.com/profile.php?id=100074378277859"
+                                title="facebook profile"
+                            >
+                                <img src="image/icons/facebook.svg" alt="..." />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://twitter.com/D_Invalid1"
+                                title="twitter profile"
+                            >
+                                <img src="image/icons/twitter.svg" alt="..." />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://www.upwork.com/freelancers/~01ae6e996b3763531e"
+                                title="upwork profile"
+                            >
+                                <img src="image/icons/upwork.svg" alt="..." />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="social-link"
+                                target="_blank"
+                                href="https://www.freelancer.com/u/Invalid33"
+                                title="freelancer profile"
+                            >
+                                <img
+                                    src="image/icons/freelancer.svg"
+                                    alt="..."
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pFullInfo"></div>
+        </aside>
+    </body>
+</html>
