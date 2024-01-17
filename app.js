@@ -1,7 +1,7 @@
 import * as func from "./content/FUNCTION.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(comfirm("Do you want to be redirected to my new portfolio"))
+    if(confirm("Do you want to be redirected to my new portfolio") === true)
        window.replace("https://dantolu33.vercel.app/");
     else{
         document.querySelector(".banner-section").classList.add("bounceInDown");
