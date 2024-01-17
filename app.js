@@ -1,15 +1,19 @@
 import * as func from "./content/FUNCTION.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".banner-section").classList.add("bounceInDown");
-    fixNavHeader();
-    func.navBtnToggle();
-    func.themeControl();
-    func.socialBtnToggle();
-    func.addSkills();
-    func.addProjects();
-    scrollEffect();
-    scrollTo();
+    if(comfirm("Do you want to be redirected to my new portfolio"))
+       window.replace("https://dantolu33.vercel.app/");
+    else{
+        document.querySelector(".banner-section").classList.add("bounceInDown");
+        fixNavHeader();
+        func.navBtnToggle();
+        func.themeControl();
+        func.socialBtnToggle();
+        func.addSkills();
+        func.addProjects();
+        scrollEffect();
+        scrollTo();
+    }
 });
 
 let sections = document.querySelectorAll("section.other");
