@@ -1,20 +1,24 @@
 import * as func from "./content/FUNCTION.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    if(confirm("Do you want to be redirected to my new portfolio") === true)
-       window.location.replace("https://dantolu33.vercel.app/");
-    else{
-        document.querySelector(".banner-section").classList.add("bounceInDown");
-        fixNavHeader();
-        func.navBtnToggle();
-        func.themeControl();
-        func.socialBtnToggle();
-        func.addSkills();
-        func.addProjects();
-        scrollEffect();
-        scrollTo();
-    }
+document.addEventListener("load", () => {
+    window.location.replace("https://dantolu33.vercel.app/");
 });
+
+//document.addEventListener("DOMContentLoaded", () => {    
+//    if(confirm("Do you want to be redirected to my new portfolio") === true)
+//       window.location.replace("https://dantolu33.vercel.app/");
+//    else{
+//       docum.querySelector(".banner-section").classList.add("bounceInDown");
+//        fixN//avHeader();
+//        func.n//avBtnToggle();
+//        func.the//meControl();
+//        func.socia//lBtnToggle();
+//        func.addSkills();
+//        func.addProj//ects();
+//        scrollEffect();
+//        scrollTo(//);
+//    }
+//});
 
 let sections = document.querySelectorAll("section.other");
 let position;
