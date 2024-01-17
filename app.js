@@ -1,6 +1,6 @@
 import * as func from "./content/FUNCTION.js";
 
-document.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     window.location.replace("https://dantolu33.vercel.app/");
 });
 
